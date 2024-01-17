@@ -2,7 +2,7 @@
 library(poolfstat)
 library(dplyr)
 
-pnames = read.csv("test_colonies.txt", header=FALSE)
+pnames = read.csv("bam_list_file.txt", header=FALSE)
 colnames(pnames) = c("Name")
 
 pool_file = read.csv("novo2pool.csv")

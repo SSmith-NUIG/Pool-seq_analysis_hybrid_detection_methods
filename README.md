@@ -34,7 +34,7 @@ First turn your BAM file list used during the mpileup creation step into a sampl
 
 sed -i 's:/data2/ssmith/bams/::g' bam_list_file.txt  
 sed -i 's:_indels.bam::g' bam_list_file.txt  
-sed -i 's/^[^_]*_//' bam_list_file.txt  
+sed -i 's/^[^_]*_//g' bam_list_file.txt  
 
 Then run ```sync_to_pooldata.R```  
 

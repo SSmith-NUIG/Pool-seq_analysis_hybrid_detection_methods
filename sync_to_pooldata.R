@@ -13,8 +13,7 @@ pnames_v = filter_file$Name
 poolsize_v = filter_file$Pool_size
 
 #print("creating pooldata file")
-#pooldata = popsync2pooldata(sync.file="/data2/ssmith/matching_snps_pop_f4ffs.sy
-nc", 
+pooldata = popsync2pooldata(sync.file="/data2/ssmith/matching_snps_pop_f4ffs.sync", 
 poolsizes=poolsize_v, 
 poolnames=pnames_v, 
 min.rc = 4, 

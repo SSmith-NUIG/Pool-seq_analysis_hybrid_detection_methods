@@ -60,7 +60,7 @@ wilcox.test(ranks_df$FST, ranks_df$F4ratio, paired= TRUE)
 
 friedmanTest(ranks_matrix)
 
-cor.test(ranks_df$Admixture, ranks_df$F4ratio, method="spearman")
+cor.test(ranks_df$Admixture, ranks_df$F4ratio, method="pearson")
 cor.test(ranks_df$Admixture, ranks_df$FST, method="pearson")
 cor.test(ranks_df$FST, ranks_df$F4ratio, method="pearson")
 
